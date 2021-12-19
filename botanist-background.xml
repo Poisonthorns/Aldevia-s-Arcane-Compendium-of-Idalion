@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Botanist Background</name>
+		<description>Basic background for botanists</description>
+		<author>Luna</author>
+		<update version="0.0.1">
+			<file name="botanist-background.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/backgrounds/background-sailer.xml" >
+		</update>
+	</info>
+
+	<element name="Botanist" type="Background" source="Aldevia's Arcane Compendium of Idalion" id="ID_NV_AACI_BACKGROUND_BOTANIST">
+		<description>
+			<p>Botanists are scholars of plants and their interactions with the world. Typically they specialize in a field of botany that captures their interest in the diverse world of plants.</p>
+			<ul>
+				<li><strong>Skill Proficiencies:</strong> Nature, Medicine</li>
+				<li><strong>Tool Proficiencies (Optional):</strong> Herbalism Kit</li>
+				<li><strong>Languages (Optional):</strong> One of your choice</li>
+				<li><strong>Equipment:</strong> Herbalism Kit, field notebook, 3 small clay pots, trowel, pouch with 10 gp, common clothes.</li>
+			</ul>
+			<div element="ID_NV_AACI_BACKGROUND_FEATURE_GUILD_MEMBER" />
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />
+			<select type="Language" name="Language (Botanist)" supports="Standard||Exotic" />
+			<grant type="Background Feature" id="ID_NV_AACI_BACKGROUND_FEATURE_GUILD_MEMBER" />
+			<select name="Specialization" type="List">
+				<item id="1">Paleobotany - Study of biology and evolution of fossil plants.</item>
+				<item id="2">Breeding - Study of plant heredity, selecting and crossing plants to develop desirable traits.</item>
+				<item id="3">Ecology - Study of relationships between plants and the world they live in.</item>
+				<item id="4">Agronomy - The study of crops and soil.</item>
+				<item id="5">Pathology - Study of diseases of plants and their prevention.</item>
+				<item id="6">Phytomancy - The study of magical plants and their applications.</item>
+				<item id="7">Aquaculture - The study of aquatic and deep sea plants.</item>
+				<item id="8">Forestry - The study of forest management to produce timber and promote conservation.</item>
+			</select>
+			<select name="Personality Trait" type="List">
+				<item id="1">A life of research has taught me to be persistent and never give up.</item>
+				<item id="2">My time observing plants has informed me that patience is a virtue.</item>
+				<item id="3">I am enthusiastic about my studies, often wanting to share them with everyone.</item>
+				<item id="4">When I travel, I meticulously take note of the fauna around me.</item>
+				<item id="5">I get bitter when people underestimate botanical studies.</item>
+				<item id="6">I don’t mind getting my hands dirty because that’s often what gardening takes.</item>
+				<item id="7">I love to be surrounded by the smells and sights of flora.</item>
+				<item id="8">I often use botany as a lens to understand things that I would normally struggle with.</item>
+			</select>
+			<select name="Ideal" type="List">
+				<item id="1">Noble Profession. I study plants and nature to solve problems like hunger (Good)</item>
+				<item id="2">Preservation. Plants and forests must be preserved, life deserves its place (Good)</item>
+				<item id="3">Knowledge. The pursuit of knowledge for life is beneficial to both me and others (Any)</item>
+				<item id="4">Natural. Leaving the world to its natural state is the best course of action. (Neutral)</item>
+				<item id="5">Greed. The plants I study exist to serve my purposes and I’ll take what I need to further my goals. (Evil)</item>
+				<item id="6">Fascination. All plants make me wonder what medicines or technologies are possible with them. (Any)</item>
+			</select>
+			<select name="Bond" type="List">
+				<item id="1">I’m dearly attached to my plants, they are my children.</item>
+				<item id="2">Destruction of forests or plants is an insult to me.</item>
+				<item id="3">Industrialization destroyed the flora of my home and I will take revenge.</item>
+				<item id="4">It is my duty to preserve the plants of the natural world.</item>
+				<item id="5">A loved one is sick and the medicine they need has yet to be discovered, I will surely find the answer in plants.</item>
+				<item id="6">My life’s work is my one true passion, everything I’ve studied has led to this.</item>
+			</select>
+			<select name="Flaw" type="List">
+				<item id="1">I often put myself and others in danger to observe exotic plants.</item>
+				<item id="2">I have a perfect memory of the plants I’ve studied, but not the names of people I meet.</item>
+				<item id="3">I care more for the preservation of nature than other people.</item>
+				<item id="4">I utilize illegal plant substances in my experiments.</item>
+				<item id="5">Making new discoveries about plants is worth more than my life.</item>
+				<item id="6">I fabricate results when a study doesn’t end in the way I wanted.</item>
+			</select>
+		</rules>
+	</element>
+	<element name="Feature: Botanical Researcher" type="Background Feature" source="Aldevia's Arcane Compendium of Idalion" id="ID_NV_AACI_BACKGROUND_FEATURE_GUILD_MEMBER">
+		<description>
+			<p>When you attempt to learn or recall botanical information, if you do not know that information, you often know where and from whom you can obtain it. Usually, this information comes from a library, conservatory, scriptorium, university, or a sage or other learned person or creature. Additionally, you are likely to gain preferential treatment from most of these places (more so at a university/conservatory/etc) across the Realms, as professional courtesy shown to a fellow scholar. <em>Your DM might rule that the knowledge you seek is secreted away in an almost inaccessible place, or that it simply cannot be found.</em>
+		</p>
+		</description>
+		<sheet alt="Botanical Researcher">
+			<description>When you attempt to learn or recall botanical information, if you do not know that information, you often know where and from whom you can obtain it.</description>
+		</sheet>
+	</element>
+</elements>
