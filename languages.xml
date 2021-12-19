@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Languages</name>
+		<update version="0.0.1">
+			<file name="languages.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/languages.xml" />
+		</update>
+	</info>
+
+	<!-- standard -->
+	<element name="Strastaric" type="Language" source="Aldevia's Arcane Compendium of Idalion" id="ID_LANGUAGE_STRASTARIC">
+		<supports>Standard</supports>
+		<description>
+			<p>A language spoken primarily in the continent of Strastar. It originates from the Common language and was created pre-Collision, when tensions were high between Aldrazar and Strastar.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Strastarians</set>
+			<set name="script">Common</set>
+		</setters>
+	</element>
+	<element name="Aldrazian" type="Language" source="Aldevia's Arcane Compendium of Idalion" id="ID_LANGUAGE_ALDRAZIAN">
+		<supports>Standard</supports>
+		<description>
+			<p>A language spoken primarily in the continent of Aldrazar. It originates from the Common language and was created pre-Collision, when tensions were high between Aldrazar and Strastar.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Aldrazians</set>
+			<set name="script">Common</set>
+		</setters>
+	</element>
+
+	<!-- exotic -->
+
+
+	<!-- secret -->
+
+	
